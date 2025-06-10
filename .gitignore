@@ -1,0 +1,33 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+*.env
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# VSCode
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Node/React
+node_modules/
+dist/
+build/
+
+# Logs
+*.log
+
+# Excel/Power BI exports (optional, if you want to ignore data files)
+# *.xlsx
+# *.csv
