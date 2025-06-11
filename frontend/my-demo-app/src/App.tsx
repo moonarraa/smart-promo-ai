@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 
+const VITE_API_URL = import.meta.env.VITE_API_URL
+
 function App() {
   const [messages, setMessages] = useState([
     { sender: 'ai', text: 'Hi! Ask me anything about the business dashboard.' }
@@ -15,7 +17,7 @@ function App() {
     setInput('')
     setLoading(true)
     try {
-      const res = await fetch('http://localhost:8000/chat', {
+      const res = await fetch(`${VITE_API_URL}/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: input })
